@@ -43,7 +43,7 @@ public class Tab1 extends Fragment {
         // Set the adapter here.
         // Use getActivity() instead of getContext()
         mExampleAdapter = new ExampleAdapter(getContext(), mExampleList);
-
+        mRecyclerView.setAdapter(mExampleAdapter);
         parseJson();
         return rootView;
     }
